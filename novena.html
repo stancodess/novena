@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -330,7 +331,7 @@
 
         /* --- BLOQUES SCROLLABLE (ORACIÓN FINAL) --- */
         .final-prayers-wrapper {
-            max-height: 60vh;
+            max-height: 55vh;
             overflow-y: auto;
             padding-right: 10px;
         }
@@ -515,6 +516,11 @@
                 max-width: 100%;
                 padding: 0 15px;
             }
+            .slide {
+                align-items: flex-start;
+                padding-top: 60px;
+                padding-bottom: 110px;
+            }
             .two-cols {
                 grid-template-columns: 1fr;
                 gap: 25px;
@@ -611,6 +617,20 @@
                 padding: 20px;
                 max-height: 300px;
             }
+            .final-prayer-block {
+                padding: 14px 18px 16px 18px;
+                margin-bottom: 12px;
+            }
+            .final-prayer-title {
+                font-size: 1.05rem;
+            }
+            .final-prayer-text {
+                font-size: 0.98rem;
+                line-height: 1.7;
+            }
+            .final-prayers-wrapper {
+                max-height: 50vh;
+            }
         }
 
         @media (max-width: 480px) {
@@ -618,7 +638,11 @@
                 padding: 0 10px;
             }
             .card-section {
-                padding: 25px 15px;
+                padding: 22px 12px;
+            }
+            .slide {
+                padding-top: 55px;
+                padding-bottom: 130px;
             }
             h1 {
                 font-size: 1.8rem;
@@ -628,11 +652,13 @@
                 margin: 0 3px;
             }
             h2 {
-                font-size: 1.4rem;
+                font-size: 1.35rem;
             }
-            p {
-                font-size: 1rem;
-                line-height: 1.6;
+            /* Forzar texto más compacto y legible en móvil */
+            .card-section p {
+                font-size: 0.95rem !important;
+                line-height: 1.6 !important;
+                text-align: left !important;
             }
             .img-frame {
                 height: 200px;
@@ -682,6 +708,16 @@
             }
             .card-section[style*="text-align: center"] span[style*="font-size: 30px"] {
                 font-size: 18px !important;
+            }
+            .final-prayer-title {
+                font-size: 1rem;
+            }
+            .final-prayer-text {
+                font-size: 0.9rem;
+                line-height: 1.6;
+            }
+            .final-prayers-wrapper {
+                max-height: 55vh;
             }
         }
 
