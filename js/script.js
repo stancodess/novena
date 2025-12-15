@@ -28,10 +28,8 @@ function updateSlide() {
     // Scroll al inicio del slide activo
     slides[currentSlide].scrollTop = 0;
     
-    // Inicializar karaoke si estamos en el slide de karaoke
-    if (currentSlide === 5) {
-        setTimeout(checkAndInitKaraoke, 500);
-    }
+    // Comprobar si el slide activo tiene karaoke (sin depender del índice)
+    setTimeout(checkAndInitKaraoke, 500);
 }
 
 function changeSlide(direction) {
